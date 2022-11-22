@@ -9,6 +9,10 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 }
+.wrapper {
+	margin: 0 auto;
+	max-width: 1440px;
+}
 .product {
 	width: 345px;
 	display: flex;
@@ -85,4 +89,28 @@ button {
 }
 button:hover, button:focus, button:active{
     background-color: #1a4031;
+}
+
+@media (min-width: 768px) {
+	.product {
+		width: 600px;
+		height: 450px;
+		display: flex;
+		flex-direction: row;
+		border-radius: 12px;
+		overflow: hidden;
+	}
+	.content {
+		width: 50%;
+		height: 100%;
+		padding: 35px;
+		justify-content: space-between;
+	}
+	.image {
+		width: 50%;
+		height: 100%;
+		background-image: url('../images/image-product-desktop.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
